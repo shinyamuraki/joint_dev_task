@@ -152,8 +152,9 @@ end
 def q15
   data1 = { name: "saitou", hobby: "soccer", age: 33, role: "admin" }
   data2 = { name: "yamada", hobby: "baseball", role: "normal" }
-
   # 以下に回答を記載
+ puts data1.include?(:age) ? "OK" : "NG"
+ puts data2.include?(:age) ? "OK" : "NG"
 
 end
 
