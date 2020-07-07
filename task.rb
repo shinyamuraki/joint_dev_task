@@ -80,8 +80,8 @@ def q9
 
   
   # 以下に回答を記載
-  names.each_with_index do |name,i|
-    puts "会員No.#{i+1} #{name}さん"
+  names.each.with_index(1) do |name,i|
+    puts "会員No.#{i} #{name}さん"
   end
 
 
