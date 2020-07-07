@@ -133,9 +133,11 @@ end
 def q13
   user_data = { name: "神里", age: 31, address: "埼玉" }
   update_data = { age: 32, address: "沖縄" }
-
+    user_data.merge!(update_data)
+  p user_data
   # 以下に回答を記載
-
+  
+  p user_data
 end
 
 def q14
