@@ -68,7 +68,9 @@ def q8
   programming_languages = %w(ruby php python javascript)
 
   # 以下に回答を記載
-
+  programming_languages.map(&:to_s)
+  programming_languages[0..3] = ["Ruby", "Php", "Python", "Javascript"]
+  upper_case_programming_languages = ["RUBY", "PHP", "PYTHON", "JAVASCRIPT"]
   # 以下は変更しないで下さい
   p programming_languages
   p upper_case_programming_languages
