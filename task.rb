@@ -48,6 +48,7 @@ end
 
 def q6
   numbers1 = [1, 2, 3, 4, 5]
+  p numbers1.map! { |numbers2| numbers2 * 10 }  
 
   # 以下に回答を記載
 
