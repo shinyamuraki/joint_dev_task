@@ -79,7 +79,12 @@ end
 def q9
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
+  
   # 以下に回答を記載
+  names.each_with_index do |name,i|
+    puts "会員No.#{i+1} #{name}さん"
+  end
+
 
 end
 
