@@ -123,6 +123,8 @@ end
 
 def q12
   data = { user: { name: "satou", age: 33 } }
+  
+  puts data[:user][:name]
 
   # 以下に回答を記載
 
