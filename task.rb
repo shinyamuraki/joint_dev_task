@@ -92,7 +92,7 @@ def q10
   foods.each do |food|
       puts food.include?("うに") ? "好物です" : "まぁまぁ好きです"
   end
-
+ 
 
 end
 
@@ -100,15 +100,16 @@ def q11
   sports = ["サッカー", "バスケ", "野球", ["フットサル", "野球"], "水泳", "ハンドボール", ["卓球", "サッカー", "ボルダリング"]]
 
   # 以下に回答を記載
-  sport = sports.flatten
-  sport.uniq!
-  p sport
+  #sport = sports.flatten １次元に変更
+  #sport.uniq!            重複削除
+  #p sport
 
-  sport.each_with_index do |name,i|
-    puts "No#{i+1} #{name}"
+  #sport.each_with_index do |name,i|
+    #puts "No#{i+1} #{name}"
+  #end　省略させる
+  sports.flatten!.uniq.each.with_index(1) do |sport,i|
+    puts "No#{i} #{sport}"
   end
-
-
 
   
 end
