@@ -137,7 +137,7 @@ def q13
   p user_data
   # 以下に回答を記載
   
-  p user_data
+  
 end
 
 def q14
