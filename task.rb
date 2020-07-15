@@ -225,13 +225,11 @@ end
 
 
 
-
-
 class Item
   # 以下を修正して下さい
-
-  def initialize(name)
-    @name = name
+  attr_reader :name
+  def initialize(params)
+    @name = params[:name]
   end
 end
 
@@ -240,6 +238,12 @@ def q19
   book = Item.new(name: "ゼロ秒思考")
   puts book.name
 end
+
+
+
+
+
+
 
 class UserQ20
   # 以下に回答を記載
